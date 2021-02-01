@@ -1,0 +1,489 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: inherit;
+  transition: all 0.1s ease;
+}
+
+html {
+  font-size: 16px;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+body,
+html {
+  height: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  background-color: #0B0C11;
+  color: #FFFFFF;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  height: auto;
+}
+
+a:link {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+a:visited {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #A384FB !important;
+}
+
+a:hover svg path {
+  fill: #A384FB !important;
+}
+
+a:active {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+::-moz-selection {
+  color: rgba(255, 255, 255, 0.85);
+  background: #A384FB;
+}
+
+::selection {
+  color: rgba(255, 255, 255, 0.85);
+  background: #A384FB;
+}
+
+::-moz-selection {
+  color: rgba(255, 255, 255, 0.85);
+  background: #A384FB;
+}
+
+.container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  padding-left: 32px;
+  padding-right: 32px;
+}
+
+.heroContainer {
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.hero {
+  /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+  /* Set a specific height */
+  height: 100vh;
+  /* Position and center the image to scale nicely on all screens */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  padding-top: 128px;
+  padding-bottom: 128px;
+  margin: 0 auto;
+}
+
+.heroLeft {
+  height: 416px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 468px;
+}
+
+.top .logo {
+  margin-bottom: 32px;
+}
+
+.top h1 {
+  font-size: 2.375em;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.top h2 {
+  font-size: 1.3125em;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.75);
+  margin-bottom: 16px;
+}
+
+.download {
+  display: flex;
+  align-items: stretch;
+  height: 56px;
+}
+
+.download button {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  padding: 16px 24px;
+  background-color: #41B7C9;
+  background: linear-gradient(to right, #DB5BDB 0%, #A384FB 50%, #41B7C9 100%);
+  font-size: 1.3125em;
+  font-weight: 600;
+  border-radius: 8px;
+  color: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  font-family: "Inter UI";
+  transition: 200ms ease all;
+  filter: hue-rotate(0deg) brightness(1);
+  transform: scale(1, 1);
+}
+
+.download button:hover {
+  filter: hue-rotate(-40deg) brightness(1.2);
+  transform: scale(1.01, 1.01);
+}
+
+.download button svg {
+  margin-right: 8px;
+  line-height: 58px;
+}
+
+.download button svg path {
+  fill: rgba(255, 255, 255, 0.9);
+}
+
+.download ul {
+  list-style: none;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-left: 16px;
+  border-left: 1px solid #6B7187;
+}
+
+.download ul li {
+  display: flex;
+  align-items: center;
+  color: #6B7187;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 16px;
+}
+
+.download ul li svg {
+  height: 16px;
+  width: auto;
+  margin-right: 4px;
+}
+
+.download ul li svg path {
+  fill: #6B7187;
+}
+
+.download ul li:before {
+  content: '';
+  position: inline-block;
+  border-bottom: 1px #6B7187 solid;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  width: 8px;
+  height: 1px;
+  margin-right: 8px;
+}
+
+.download ul a {
+  color: #6B7187;
+  display: flex;
+  align-items: center;
+  line-height: 16px;
+}
+
+.download ul a svg {
+  height: 16px;
+  width: auto;
+  margin-right: 4px;
+}
+
+.download ul a svg path {
+  fill: #6B7187;
+}
+
+.download ul #beta {
+  cursor: not-allowed;
+  color: #6B7187 !important;
+  text-decoration: line-through;
+}
+
+.requirements,
+#donateButton {
+  font-size: 16px;
+  line-height: 24px;
+  color: #6B7187;
+  fill: #6B7187;
+  margin-top: 8px;
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+}
+
+.requirements,
+#FaqButton {
+  font-size: 16px;
+  line-height: 24px;
+  color: #6B7187;
+  fill: #6B7187;
+  margin-top: 8px;
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+}
+
+.requirements,
+#windowsbutton {
+  font-size: 16px;
+  color: #6B7187;
+  fill: #6B7187;
+  display: flex;
+  font-weight: 500;
+}
+
+.requirements svg,
+#donateButton svg {
+  margin-right: 8px;
+  height: 24px;
+  width: auto;
+}
+
+.requirements {
+  margin-top: 16px;
+}
+
+#donateButton {
+  display: inline-flex;
+}
+
+.heroRight {
+  display: flex;
+  max-width: 468px;
+}
+
+.embed-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+}
+
+.embed-container embed,
+.embed-container iframe,
+.embed-container object {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* FUSDFHUSHDFIHSDUFHUIHUSIDF */
+.center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.dl-card {
+  max-width: 50rem;
+  margin: 25vh auto;
+  padding: 32px;
+  box-shadow: rgba(0, 0, 0, 0.5) 0 8px 16px 2px;
+  background-color: #292D34;
+  border-radius: 4px;
+}
+
+.card-title {
+  font-weight: 700;
+  font-size: 1.3125em;
+  margin-bottom: 8px;
+}
+
+.card-subtitle {
+  color: #6B7187;
+  font-weight: 500;
+}
+
+.card-text {
+  color: #C8CFE6;
+  font-weight: 500;
+}
+
+hr {
+  margin: 16px auto;
+  height: 2px;
+  border: none;
+  background: #db5bdb;
+  /* Old browsers */
+  background: linear-gradient(to right, #db5bdb 0%, #a384fb 50%, #41b7c9 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  width: calc(100% + 64px);
+  margin-left: -32px;
+}
+
+.dl-card .twitterButtons {
+  margin: 16px 0 8px;
+}
+
+.dl-card small {
+  font-size: 0.75em;
+  font-weight: 500;
+  color: #6B7187;
+}
+
+.wobbly {
+  -webkit-animation: wobble 300ms ease infinite;
+  animation: wobble 300ms ease infinite;
+}
+
+@-webkit-keyframes wobble {
+  0% {
+    -webkit-transform: scale(1.1, 0.9);
+    transform: scale(1.1, 0.9);
+  }
+
+  50% {
+    -webkit-transform: scale(0.9, 1.1);
+    transform: scale(0.9, 1.1);
+  }
+
+  100% {
+    -webkit-transform: scale(1.1, 0.9);
+    transform: scale(1.1, 0.9);
+  }
+}
+
+@keyframes wobble {
+  0% {
+    -webkit-transform: scale(1.1, 0.9);
+    transform: scale(1.1, 0.9);
+  }
+
+  50% {
+    -webkit-transform: scale(0.9, 1.1);
+    transform: scale(0.9, 1.1);
+  }
+
+  100% {
+    -webkit-transform: scale(1.1, 0.9);
+    transform: scale(1.1, 0.9);
+  }
+}
+
+#particles {
+  z-index: -200000;
+  width: 100vw;
+  height: 100vh;
+  display: block;
+  position: fixed;
+}
+
+.faq {
+  padding: 64px;
+  max-width: 740px;
+}
+
+.article {
+  margin-bottom: 32px;
+}
+
+.faq h1 {
+  font-size: 2.375em;
+  margin-bottom: 32px;
+  font-weight: 700;
+}
+
+.faq h2 {
+  font-size: 1.3125em;
+  color: #FFFFFF;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.faq p {
+  font-size: 1em;
+  color: rgba(255, 255, 255, 0.75);
+  font-weight: 500;
+}
+
+.faq p a {
+  font-weight: 600;
+}
+
+.changelog {
+  padding: 64px;
+  max-width: 740px;
+}
+
+.changelog h1 {
+  font-size: 2.375em;
+  margin-bottom: 32px;
+  font-weight: 700;
+}
+
+.changelog h2 {
+  font-size: 1.3125em;
+  color: #FFFFFF;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.changelog p {
+  font-size: 1em;
+  color: rgba(255, 255, 255, 0.75);
+  font-weight: 500;
+}
+
+.changelog li {
+  font-size: 1em;
+  color: rgba(255, 255, 255, 0.75);
+  font-weight: 500;
+  margin-bottom: 16px;
+  list-style-position: inside;
+
+}
+
+.changelog p a {
+  font-weight: 600;
+}
+
+.borderLeft {
+  list-style: none;
+  border-left: 1px solid rgba(255, 255, 255, 0.50);
+  margin-left: 2px;
+  padding-left: 16px;
+  overflow: visible;
+}
+
+.backToHome {
+  color: #A384FB !important;
+  fill: #A384FB;
+  font-size: 1.3125em;
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+  font-weight: 600;
+}
+
+.backToHome svg {
+  margin-right: 4px;
+}

@@ -1,0 +1,400 @@
+$text: #FFFFFF;
+$text-mid: #C8CFE6;
+$text-dark: #6B7187;
+
+$bg-light: #292D34;
+$bg-mid: #191C21;
+$bg-dark: #0B0C11;
+
+$pink: #db5bdb;
+$purple: #a384fb;
+$cyan: #41b7c9;
+
+$grad: linear-gradient(45deg, $pink 0%, $purple 43%, $cyan 100%);
+$grad-1: linear-gradient(45deg, $pink 0%, $purple 100%);
+$grad-2: linear-gradient(45deg, $purple 0%, $cyan 100%);
+
+::-moz-selection {
+	background: $pink;
+}
+
+::selection {
+	background: $pink;
+}
+
+.waves-effect.waves-pink .waves-ripple {
+	background-color: $pink;
+}
+
+.waves-effect.waves-dark .waves-ripple {
+	background-color: $bg-light;
+}
+
+#particles {
+	z-index: -200000;
+	width: 100vw;
+	height: 100vh;
+	display: block;
+	position: fixed;
+}
+
+html {
+	font-family: 'Inter', sans-serif;
+	color: $text;
+	background-color: $bg-dark;
+	font-size: 16px;
+	box-sizing: border-box;
+}
+
+body {
+	-webkit-font-smoothing: antialiased;
+}
+
+.btn,
+.btn-large,
+.btn-small {
+	border-radius: 999rem;
+	text-transform: none;
+	box-shadow: none;
+	transition: 400ms ease;
+}
+
+.btn:hover,
+.btn-large:hover,
+.btn-small:hover {
+	transform: scale(1.05, 1.05);
+}
+
+.btn-small {
+	font-weight: 400;
+}
+
+.btn-clear {
+	background: none;
+	box-shadow: none;
+	transition: 200ms ease all;
+}
+
+.btn-clear:focus {
+	background: none;
+}
+
+.btn-clear:hover {
+	box-shadow: none;
+	background: rgba(107, 113, 135, 0.3);
+	transform: none;
+}
+
+.hover-rot-1:hover {
+	filter: hue-rotate(40deg);
+}
+
+.hover-rot-2:hover {
+	filter: hue-rotate(-40deg);
+}
+
+.grad {
+	background: $grad;
+}
+
+.dl-btn-left,
+.dl-btn-right {
+	width: 172px;
+}
+
+.dl-btn-left {
+	background: $grad-1;
+	border-radius: 999rem 0 0 999rem;
+	margin: 0;
+}
+
+.dl-btn-right {
+	background: $grad-2;
+	border-radius: 0 999rem 999rem 0;
+	margin: 0;
+}
+
+.flex-center {
+	justify-content: center;
+}
+
+.logo-header {
+	display: inline;
+	position: relative;
+	width: 90px;
+}
+
+.header-subtext {
+	padding-bottom: 1.5rem;
+}
+
+@media (max-width: 767px) {
+	.header-subtext {
+		margin-top: 1rem;
+	}
+}
+
+.header-subtext span {
+	font-weight: 400;
+	color: $text-mid;
+	font-size: 1.4rem;
+}
+
+@media (max-width: 767px) {
+	.header-subtext span {
+		font-size: 1rem;
+		font-weight: 400;
+	}
+}
+
+.caption {
+	display: inline-block;
+	font-size: 3rem;
+	font-weight: 600;
+	margin-left: 2rem;
+}
+
+.les-badge {
+	font-size: 1.2rem;
+	font-weight: 400;
+	background-color: $bg-dark;
+	border-radius: 200rem;
+	padding: 0.3rem;
+	padding-left: 0.8rem;
+	padding-right: 0.8rem;
+}
+
+.badge-new {
+	font-size: 0.9rem;
+	font-weight: 600;
+	background: $grad;
+	border-radius: 200rem;
+	padding-left: 0.8rem;
+	padding-right: 0.75rem;
+	display: inline-block;
+	margin-left: 1rem;
+	letter-spacing: 0.1em;
+	position: absolute;
+	font-variant: small-caps;
+}
+
+.header-secondary-button {
+	display: block;
+	width: 8rem;
+	font-size: 0.8rem;
+}
+
+.sep {
+	display: inline-block;
+	height: 1.5rem;
+	width: 1px;
+	background-color: $text-dark;
+	margin-left: 1rem;
+	margin-right: 1rem;
+}
+
+.darker-fucking-text-1 {
+	color: $text-mid;
+}
+
+h1,
+h2,
+h3 {
+	font-weight: 500;
+}
+
+h1 {
+	font-size: 3rem;
+}
+
+h2 {
+	font-size: 2rem;
+}
+
+h3 {
+	font-size: 1.7rem;
+}
+
+.banner {
+	position: relative;
+	display: block;
+	text-align: center;
+	margin: 0 auto;
+	padding-top: 6rem;
+	min-height: 20rem;
+}
+
+@media (max-width: 768px) {
+	.banner .caption {
+		font-size: 2rem;
+	}
+
+	.banner sup {
+		font-size: 0.8rem;
+	}
+}
+
+.banner::after {
+	content: "";
+	background-image: linear-gradient(to bottom, rgba(11, 12, 17, 0), $bg-dark), url("../images/lesbanner.png");
+	background-size: cover;
+	opacity: 0.3;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	position: absolute;
+	z-index: -1;
+}
+
+.overview-item {
+
+	h2 {
+		font-weight: 500;
+	}
+
+	p {
+		color: $text-mid;
+
+		em {
+			font-weight: 500;
+			color: $text-mid;
+			font-style: normal;
+		}
+	}
+
+	img {
+		max-height: 184px;
+		width: auto;
+	}
+
+}
+
+.special-h1 {
+	background: $grad;
+	color: $bg-dark;
+	padding: 1rem;
+}
+
+.extra-pad-top {
+	padding-top: 2rem;
+}
+
+.really-fat-pad-top-fuck-off {
+	padding-top: 3rem;
+}
+
+.more-features ul {
+	text-align: left;
+}
+
+.more-features ul li {
+	padding: 0.5rem;
+	color: $text-mid;
+}
+
+.testimonials p {
+	color: $text-mid;
+}
+
+.testimonial {
+	min-width: 10rem;
+	max-width: 10rem;
+	min-height: 10rem;
+	max-height: 10rem;
+	object-fit: cover;
+	margin-top: 2rem;
+}
+
+.testimonial-grid .col {
+	height: 28rem;
+}
+
+blockquote {
+	border-left: none;
+	color: $text-mid;
+	font-style: italic;
+	padding-right: 1rem;
+}
+
+blockquote::before {
+	content: open-quote;
+}
+
+blockquote::after {
+	content: close-quote;
+}
+
+.link-bar {
+	padding-top: 3rem;
+}
+
+.page-footer {
+	background-color: $bg-dark;
+	color: $text-dark;
+}
+
+.page-footer .footer-copyright {
+	color: $text-dark;
+	background-color: rgba(0, 0, 0, 0);
+	padding-bottom: 3rem;
+}
+
+a {
+	color: $purple;
+}
+
+a:hover {
+	color: $text;
+	transition: .2s;
+	transition-timing-function: ease-in-out;
+
+}
+
+.auxiliary-page-title {
+	font-size: 13px;
+	margin-left: 1rem;
+	font-weight: 500;
+	letter-spacing: 0.05rem;
+	display: inline-block;
+}
+
+.mega-fat-pad-bottom {
+	margin-bottom: 12rem;
+}
+
+li {
+	list-style-type: disc !important;
+}
+
+code {
+	font-family: 'Roboto Mono', monospace;
+	color: $text-mid;
+	font-size: 12px;
+	line-height: 24px;
+	padding: 0px 6px;
+	border: 2px solid $text-dark;
+	border-radius: 4px;
+	background: $bg-dark;
+	font-weight: 500;
+
+}
+
+ul ul {
+	margin-top: none;
+	margin-left: 1rem;
+}
+
+.row {
+	margin-bottom: 64px;
+}
+
+.section {
+	padding-top: 2rem;
+	padding-bottom: 2rem;
+}
+
+.feature {
+	display: flex;
+	align-items: center;
+}

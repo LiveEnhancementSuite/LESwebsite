@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Enhancement Suite | FAQ</title>
+    <meta name="description" content="Frequently asked questions about Live Enhancement Suite.">
+    <meta name="keywords" content="Live Enhancement Suite,Ableton Live,workflow,download,Dylan Tallchief,Inverted Silence,LES,music,music production,enhancement,Autohotkey,Windows,free software,free download,free,mac,macOS">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+    <link rel="stylesheet" href="styles/materialize.min.css"/>
+    <link rel="stylesheet" href="styles/main.scss">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+  </head>
+  <body>
+    <div id="particles"></div>
+    <div class="container">
+      <div class="row really-fat-pad-top-fuck-off section valign-wrapper">
+        <a href="/" class="waves-effect waves-pink btn-small btn-clear darker-fucking-text-1">
+          <i class="material-icons left">arrow_back</i>Back</a>
+        <div class="sep"></div>
+        <span class="auxiliary-page-title">Frequently Asked Questions</span>
+      </div>
+      <div class="row section">
+        <div class="col l6">
+          <h2>What is this?</h2>
+          <p>Live Enhancement Suite is a workflow enhancement tool written in AutoHotkey and Lua + Hammerspoon. Instead of making changes to Ableton Live itself, it automates user action at near-invisible speeds.</p>
+          <p>Both of these tools are often used to make quick and dirty shortcuts for personal use, but the goal of Live Enhancement Suite is to make a tool that works well for all users, making these shortcuts accessible and easy to use.
+          </p>
+          <p>A complete list of all the features can be found in the
+            <a href="https://docs.enhancementsuite.me" target="_blank">documentation</a>.
+          </p>
+        </div>
+      </div>
+      <div class="row section">
+        <div class="col l6">
+          <h2>Why did you make this?</h2>
+          <p>LES is an Ableton Live fan project run by artists.</p>
+          <p>In our opinion, Ableton Live is very close to being the perfect DAW for creating music and other content. However, there are additional features we wish were part of the software, but aren't, so we've created them ourselves.
+          </p>
+          <p>
+            We hope to make the music creation experience more enjoyable for beginners and professionals alike.
+          </p>
+        </div>
+      </div>
+      <div class="row section">
+        <div class="col l6">
+          <h2>The program is starting, but the menu doesn't work.
+            <div class="badge-new">WIN</div>
+          </h2>
+          <p>This is a common problem people have when running Ableton Live as an administrator.</p>
+          <p>An easy way to fix this is to either run Ableton Live as a normal user, or to run LES as an administrator. Everything will work fine as long as both of them match.
+          </p>
+        </div>
+      </div>
+      <div class="row section">
+        <div class="col l6">
+          <h2>The program refuses to start ever since I changed the menu!
+            <div class="badge-new">MAC</div>
+          </h2>
+          <p>You probably made a menu that somehow causes hammerspoon to crap out.</p>
+          <p>I try to catch most possile errors, but I probably did't get all of them.</p>
+          <p>Head to the finder, hit Cmd + shift + G; and enter ~/.LES/</p>
+          <p>In here you can find the menuconfig.ini file when the program refuses to start.</p>
+          <p>Try to look out for submenus without items, or empty lines that accidentally have a space bar on them.</p>
+        </div>
+      </div>
+      <div class="row section">
+        <div class="col l6">
+          <h2>The Ableton right click menu shows up alongside the LES double right click menu!
+          </h2>
+          <p>Ableton has changed the way right click menus work on Mac in Live 10.3, but the functionality hasn't changed.</p>
+          <p>Unfortunately there's not a way to fix this visual glitch without compromising performance. Don't worry, you're not selecting two things at the same time.</p>
+        </div>
+      </div>
+      <div class="row section">
+        <div class="col l6">
+          <h2>The scale menu isn't placing notes! How can I get it to work?</h2>
+          <p>In order to place scale stamps you need to use the piano roll macro.</p>
+          <p>Please check out this page in the
+            <a href="https://docs.enhancementsuite.me/shortcut_menus.html#piano-menu">documentation</a>
+            for more information.</p>
+        </div>
+      </div>
+      <div class="row section">
+        <div class="col l6">
+          <h2>How do I update?</h2>
+          <p>Please check out this page in the
+            <a href="https://docs.enhancementsuite.me/installation.html">documentation</a>
+            for everything about installing and updating.</p>
+        </div>
+      </div>
+      <div class="row section">
+        <div class="col l6">
+          <h2>Disableloop isn't working!</h2>
+          <p>To create clips with the loop disabled, use the ctrl + shift + m shortcut included in Live.</p>
+          <p>Remember that LES is just a macro toolkit. There's no way for us to know you're creating a clip if you do it by double clicking.</p>
+        </div>
+      </div>
+      <div class="row section">
+        <div class="col l6">
+          <h2>I can't create a search query that only shows up with the plugin I want!</h2>
+          <p>Ableton seems to have removed literal search in a recent ableton update, making it more difficult to do specific plugin searches.</p>
+          <p>If all else fails, you can always save a preset of the plugin and then search for a .adv or .adg file instead.</p>
+        </div>
+      </div>
+      <div class="row section">
+        <div class="col l6">
+          <h2>Help! X other thing doesn’t work properly for me!</h2>
+          <p>Because it's a free download I'm surrounded by a forcefield that destroys all complaints and platform requests. Jokes aside, that’s not good&mdash;If you have a problem with the program misbehaving, please send Inverted Silence a DM on Twitter (DM's are open to everyone!):
+            <a href="https://twitter.com/invertedsilence" target="_blank">@invertedsilence</a>
+          </p>
+        </div>
+      </div>
+      <div class="row section">
+        <div class="col l6">
+          <h2>How can I contact you?</h2>
+          <p>DM <a href="https://twitter.com/invertedsilence" target="_blank">@invertedsilence</a>
+              on twitter if you can't figure something out!</p>
+          </div>
+        </div>
+        <div class="row section">
+          <div class="col l6">
+            <h2>Who made this website?</h2>
+            <p>This website was made by
+              <a href="https://twitter.com/voltra">Lucia Lovelace</a>
+              and
+              <a href="https://twitter.com/sylvianyeah">Sylvian</a>.
+            </p>
+          </div>
+        </div>
+        <div class="row section mega-fat-pad-bottom">
+          <div class="col l6">
+            <h2>Can I remix the secret easter egg song?</h2>
+            <p>Yes.
+            </p>
+          </div>
+        </div>
+      </div>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
+      <script src="scripts/download.js"></script>
+    </body>
+  </html>

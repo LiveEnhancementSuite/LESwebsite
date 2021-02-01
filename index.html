@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Enhancement Suite</title>
+    <meta name="description" content="Live Enhancement Suite is a free workflow enhancement tool, making your Ableton Live workflow faster and efficient. Download it here.">
+    <meta name="keywords" content="Live Enhancement Suite,Ableton Live,workflow,download,Dylan Tallchief,Inverted Silence,LES,music,music production,enhancement,Autohotkey,Windows,free software,free download,free,mac,macOS">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/materialize.min.css"/>
+    <link rel="stylesheet" href="styles/main.scss">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+  </head>
+  <body>
+    <div class="banner">
+      <div class="valign-wrapper center-align flex-center">
+        <img class="logo-header" src="images/LES_gradient.svg" alt="Live Enhancement Suite Logo">
+        <span class="caption">Live Enhancement Suite
+          <sup class="les-badge" style="background-color: #49B3CD;">1.3.2</sup>
+        </span>
+      </div>
+      <div class="row header-subtext">
+        <span>Ableton Live, supercharged. Now open source.</span>
+      </div>
+      <div class="row">
+        <a href="/download" class="waves-effect waves-light btn-large dl-btn-left hover-rot-1">
+          <i class="material-icons left">file_download</i>Windows
+        </a>
+        <a href="/download-mac" class="waves-effect waves-light btn-large dl-btn-right hover-rot-2">
+          <i class="material-icons left">file_download</i>macOS
+        </a>
+      </div>
+    </div>
+    <div class="center-align valign-wrapper flex-center link-bar" style="margin-bottom: 0.9rem;">
+      <a href="https://docs.enhancementsuite.me" class="waves-effect waves-pink btn-small btn-clear darker-fucking-text-1">
+        <i class="material-icons left">book</i>Documentation</a>
+      <div class="sep"></div>
+      <a href="/faq" class="waves-effect waves-pink btn-small btn-clear darker-fucking-text-1">
+        <i class="material-icons left">help</i>FAQ</a>
+      <div class="sep"></div>
+      <a href="/changelog" class="waves-effect waves-pink btn-small btn-clear btn-inline darker-fucking-text-1">
+        <i class="material-icons left">toys</i>Changelog</a>
+      <div class="sep"></div>
+      <a href="https://youtu.be/st4BMvKoxk4" class="waves-effect waves-pink btn-small btn-clear darker-fucking-text-1">
+        <i class="material-icons left">school</i>Tutorial Video</a>
+      <div class="sep"></div>
+      <a href="https://paypal.me/enhancementsuite" class="waves-effect waves-pink btn-small btn-clear darker-fucking-text-1">
+        <i class="material-icons left">attach_money</i>Donate to LES</a>
+    </div>
+    
+    <div class="row extra-pad-top center-align center">
+      <a class="center-text source" href="https://github.com/Inversil/LESwin" target="_blank" style="position: relative; bottom: 0.37rem;">Windows Source</a> 
+      <div class="sep"></div>
+      <a class="center-text source" href="https://github.com/LiveEnhancementSuite/LESforMacOS" target="_blank" style="position: relative; bottom: 0.37rem;">macOS Source</a></p>
+    </div>
+    
+    <div class="container">
+      <div class="row flex-center valign-wrapper" style="margin-bottom: 0px;"></div>
+      <a id="features"></a>
+      <div class="row center-align">
+        <h1>Features</h1>
+      </div>
+      <div class="module">
+      <div class="row section feature">
+        <div class="col l4 xl6 overview-item">
+          <h2>Quickly add devices</h2>
+          <p>Open a fully customisable menu of devices with just a
+            <em>double
+              <code>right-click</code>
+            </em>. You can customise which devices appear and how they are categorised. You can even add menus within menus now!</p>
+        </div>
+        <div class="col l8 xl6 center-align overview-item">
+          <img src="images/illus/double_rc.svg" alt="Double-Right-Click Illustration">
+        </div>
+      </div>
+      <div class="row section feature">
+        <div class="col l8 xl6 center-align overview-item">
+          <img src="images/illus/xplat.svg" class="extra-pad-top" alt="macOS Illustration">
+        </div>
+        <div class="col l4 xl6 overview-item">
+          <h2>Use on all platforms<div class="badge-new">NEW</div>
+          </h2>
+          <p>With 1.2, Live Enhancement suite is
+            <em>finally available on macOS!</em>
+            You can even use the same config files on both platforms.</p>
+        </div>
+      </div>
+      <div class="row section feature">
+        <div class="col l4 xl6 overview-item">
+          <h2>Time your projects<div class="badge-new">NEW</div>
+          </h2>
+          <p>
+            <em>Open a timer</em>
+            that tells you how long you've been working on a project for, just like in FL. This timer can be set to either activate only when you're in Live, or whenever Live is open.</p>
+        </div>
+        <div class="col l8 xl6 center-align overview-item">
+          <img class="really-fat-pad-top-fuck-off" src="images/illus/timer.svg" alt="Timer Illustration">
+        </div>
+      </div>
+      <div class="row section feature">
+        <div class="col l8 xl6 center-align overview-item">
+          <img src="images/illus/close.svg" alt="Close All Illustration">
+        </div>
+        <div class="col l4 xl6 overview-item">
+          <h2>Close all plugin windows</h2>
+          <p>Press
+            <em>
+              <code>Ctrl</code>
+              +
+              <code>Alt</code>
+              +
+              <code>W</code>
+            </em>
+            to quickly close all open plugin windows. A massive timesaver to declutter your interface when opening those crowded sound design racks with 300 VSTs.</p>
+        </div>
+      </div>
+      <div class="row section feature">
+        <div class="col l4 xl6 overview-item">
+          <h2>Clear track<div class="badge-new">NEW</div>
+          </h2>
+          <p>Press
+            <em>
+              <code>Alt</code>
+              +
+              <code>X</code>
+            </em>
+            while hovering over a track to quickly clear it of all of its clips. Useful when duplicating tracks.</p>
+        </div>
+        <div class="col l8 xl6 center-align overview-item">
+          <img src="images/illus/clear.svg" class="really-fat-pad-top-fuck-off" alt="Clear Track Illustration">
+        </div>
+      </div>
+      <div class="row section feature">
+        <div class="col l8 xl6 center-align overview-item">
+          <img src="images/illus/megalovania.svg" alt="Note Drawing Illustration">
+        </div>
+        <div class="col l4 xl6 overview-item">
+          <h2>Draw notes</h2>
+          <p>Hold the
+            <em>
+              <code>~</code>
+              Tilde key
+            </em>
+            (or another key of your choice) to draw notes into the piano roll easily. Properly, not like Draw Mode.
+          </p>
+        </div>
+      </div>
+      <div class="row section feature">
+        <div class="col l4 xl6 overview-item">
+          <h2>Stay in key</h2>
+          <p>
+            <em>Double
+              <code>right-click</code>
+            </em>
+            the piano roll to select a scale and stamp a scale on your piano roll. No more getting confused about whether your notes are in key or not.</p>
+        </div>
+        <div class="col l8 xl6 center-align overview-item">
+          <img src="images/illus/scale.svg" alt="Scales Illustration">
+        </div>
+      </div>
+      <div class="row section feature">
+        <div class="col l8 xl6 center-align overview-item">
+          <img src="images/illus/locator.svg" alt="Locators Illustration">
+        </div>
+        <div class="col l4 xl6 overview-item">
+          <h2>Quickly place locators</h2>
+          <p>Press
+            <em>
+              <code>Right Alt</code>
+              +
+              <code>L</code>
+            </em>
+            to quickly place a locator wherever you are. Live doesn't include a shortcut for this, so we have.</p>
+        </div>
+      </div>
+      <div class="row section feature">
+        <div class="col l4 xl6 overview-item">
+          <h2>Pan without your keyboard</h2>
+          <p>Simply
+            <em>hold down the middle mouse button</em>
+            to pan. No more having to hold
+            <code>Ctrl</code>
+            +
+            <code>Alt</code>
+            to pan. Windows only.</p>
+        </div>
+        <div class="col l8 xl6 center-align overview-item">
+          <img src="images/illus/pan.svg" alt="Panning Illustration">
+        </div>
+      </div>
+      <div class="row section feature">
+        <div class="col l8 xl6 center-align overview-item">
+          <img src="images/illus/garbage.svg" alt="Versions Illustration">
+        </div>
+        <div class="col l4 xl6 overview-item">
+          <h2>Quickly save versions</h2>
+          <p>Press
+            <em>
+              <code>Ctrl</code>
+              +
+              <code>Alt</code>
+              +
+              <code>S</code>
+            </em>
+            to quickly save another version of your project and automatically number it, similarly to FL Studio.</p>
+        </div>
+      </div>
+      <div class="row extra-pad-top center-align">
+        <h2>And more, too</h2>
+      </div>
+      <div class="row more-features">
+        <div class="col l6 offset-l4">
+          <ul>
+            <li>Double-press 0 to delete without a delete key</li>
+            <li>Use
+              <code>Ctrl</code>
+              +
+              <code>Shift</code>
+              +
+              <code>Z</code>
+              to redo</li>
+            <li>Press
+              <code>Alt</code>
+              +
+              <code>E</code>
+              to view envelope mode in piano roll</li>
+            <li>Press
+              <code>Alt</code>
+              +
+              <code>C</code>
+              while hovering over a track to colour its clips</li>
+            <li>Multi-monitor support</li>
+            <li>Compatible with all skins</li>
+            <li>Lightweight & fast</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+      <a id="testimonials"></a>
+      <div class="row section center-align testimonials">
+        <h1>Don't take our word for it</h1>
+        <p>See what these acts are saying about Live Enhancement Suite:</p>
+      </div>
+      <div class="row section testimonial-grid">
+        <div class="col s6 m4 xl3 center-align">
+          <img class="testimonial circle" src="images/testimonials/matzo.jpg" alt="A picture of Mat Zo">
+          <h5>Mat Zo</h5>
+          <blockquote>Yo the enhancement suite is seriously speeding up my workflow</blockquote>
+        </div>
+        <div class="col s6 m4 xl3 center-align">
+          <img class="testimonial circle" src="images/testimonials/mrbill.jpg" alt="A picture of Mr. Bill">
+          <h5>Mr. Bill</h5>
+          <blockquote>haha fuck yeah that's sick</blockquote>
+        </div>
+        <div class="col s6 m4 xl3 center-align">
+          <img class="testimonial circle" src="images/testimonials/kshmr.jpg" alt="A picture of KSHMR">
+          <h5>KSHMR</h5>
+          <blockquote>Congratulations on a game changer surely about to catch wildfire in the production community</blockquote>
+        </div>
+        <div class="col s6 m4 xl3 center-align">
+          <img class="testimonial circle" src="images/testimonials/jaron.jpg" alt="A picture of Jaron">
+          <h5>Jaron</h5>
+          <blockquote>i approve of the live enhancement suite</blockquote>
+        </div>
+        <div class="col s6 m4 xl3 center-align">
+          <img class="testimonial circle" src="images/testimonials/sanholo.jpg" alt="A picture of San Holo">
+          <h5>San Holo</h5>
+          <blockquote>wow. i need it.</blockquote>
+        </div>
+        <div class="col s6 m4 xl3 center-align">
+          <img class="testimonial circle" src="images/testimonials/lvghst.jpg" alt="A picture of in love with a ghost">
+          <h5>in love with a ghost</h5>
+          <blockquote>damn im ryl liking this, seems so useful if u wanna go quicker</blockquote>
+        </div>
+        <div class="col s6 m4 xl3 center-align">
+          <img class="testimonial circle" src="images/testimonials/reach.jpg" alt="A picture of Reach">
+          <h5>Reach</h5>
+          <blockquote>this is actually fucking nuts, its crazy</blockquote>
+        </div>
+        <div class="col s6 m4 xl3 center-align">
+          <img class="testimonial circle" src="images/testimonials/jaydon.jpg" alt="A picture of Jaydon Lewis">
+          <h5>Jaydon Lewis</h5>
+          <blockquote>LES IS AMAZING</blockquote>
+        </div>
+        <div class="col s6 m4 xl3 center-align">
+          <img class="testimonial circle" src="images/testimonials/retrovision.jpg" alt="A picture of RetroVision">
+          <h5>RetroVision</h5>
+          <blockquote>DUDEEE THIS IS LIFECHANGING</blockquote>
+        </div>
+        <div class="col s6 m4 xl3 center-align">
+          <img class="testimonial circle" src="images/testimonials/billboard.jpg" alt="A picture of Mat Zo">
+          <h5>Billboard</h5>
+          <blockquote>I love what you did with LES!💪</blockquote>
+        </div>
+        <div class="col s6 m4 xl3 center-align">
+          <img class="testimonial circle" src="images/testimonials/duumu.jpg" alt="A picture of Duumu">
+          <h5>duumu</h5>
+          <blockquote>excited to use this as a part of my workflow</blockquote>
+        </div>
+        <!--<div class="col s6 m4 xl3 center-align"> <img class="testimonial circle" src="/moonboy.69778e63.jpg" alt="A picture of Moonboy"> <h5>MOONBOY</h5> <blockquote>thank you so much for hacking my ableton!</blockquote> </div>-->
+        <div class="col s6 m4 xl3 center-align">
+          <img class="testimonial circle" src="images/testimonials/machinedrum.jpg" alt="A picture of Machinedrum">
+          <h5>Machinedrum</h5>
+          <blockquote>THANK YOU SO MUCH FOR THIS!!!! GAME CHANGER!</blockquote>
+        </div>
+        <div class="col s6 m4 xl3 center-align">
+          <img class="testimonial circle" src="images/testimonials/barelyalive.jpg" alt="A picture of Barely Alive">
+          <h5>Barely Alive</h5>
+          <blockquote>awesome man! we are planning to get into streaming some production stuff so i’ll be repping &lt;3
+          </blockquote>
+        </div>
+        <div class="col s6 m4 xl3 center-align">
+          <img class="testimonial circle" src="images/testimonials/tascione.jpg" alt="A picture of Tascione">
+          <h5>Tascione</h5>
+          <blockquote>you are an absolute legend. gonna save me so much time.</blockquote>
+        </div>
+        <!--<div class="col s6 m4 xl3 center-align"> <img class="testimonial circle" src="images/testimonials/beaudamian.jpg" alt="A picture of BeauDamian"></img> <h5>BeauDamian</h5> <blockquote>Thank you for contributing to music science!</blockquote>
+        </div>-->
+        <!--<div class="col s6 m4 xl3 center-align"> <img class="testimonial circle" src="images/testimonials/sem.jpg" alt="A picture of Sem"></img> <h5>Sem</h5> <blockquote>yoo this is sick!! this is so cool haha lifesaver</blockquote> </div>-->
+        <!--<div class="col s6 m4 xl3 center-align"> <img class="testimonial circle" src="images/testimonials/eclipse.jpg" alt="A picture of Eclipse"></img> <h5>Eclipse</h5> <blockquote>this looks so so sick, thank you so much dude</blockquote> </div>-->
+        <div class="col s6 m4 xl3 center-align">
+          <img class="testimonial circle" src="images/testimonials/tex.jpg" alt="A picture of Lil Texas">
+          <h5>Lil Texas</h5>
+          <blockquote>Amazing can’t wait to check this out</blockquote>
+        </div>
+        <div class="col s6 m4 xl3 center-align">
+          <img class="testimonial circle" src="images/testimonials/jupe.jpg" alt="A picture of Jupe">
+          <h5>Jupe</h5>
+          <blockquote>LES is the epicest of the epic plz buy jk its free even better</blockquote>
+        </div>
+        <div class="col s6 m4 xl3 center-align">
+          <img class="testimonial circle" src="images/testimonials/rabidzen.jpg" alt="A picture of rabidZen">
+          <h5>rabidZen</h5>
+          <blockquote>this makes an already great program that much better.. if you're on ableton, you NEED this
+          </blockquote>
+        </div>
+      </div>
+    </div>
+    <div class="row section center-align">
+      <a href="#" class="waves-effect waves-pink btn-small btn-clear darker-fucking-text-1">
+        <i class="material-icons left">arrow_upward</i>Return to top</a>
+    </div>
+    <footer class="page-footer">
+      <div class="container">
+        <div class="footer-copyright">
+          <span>© 2019
+            <a href="https://twitter.com/dylantallchief">Dylan Tallchief</a>
+            and
+            <a href="https://twitter.com/invertedsilence">Inverted Silence</a>
+          </span>
+          <span class="right">Site & branding by
+            <a target="_blank" href="https://twitter.com/RX6800">Lucia Lovelace</a>
+            &
+            <a target="_blank" href="https://twitter.com/sylvianyeah">Sylvian</a>
+          </span>
+        </div>
+      </div>
+    </footer>
+    <script src="scripts/materialize.min.js"></script>
+  </body>
+</html>
