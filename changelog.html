@@ -27,252 +27,319 @@
       <div class="sep"></div>
       <span class="auxiliary-page-title">Changelog</span>
     </div>
-	
-	<div class="row section">
-		<div class="col l6">
-			<p>Live Enhancement Suite's official updates have been discontinued for the time being. <a href="https://www.youtube.com/watch?v=eX0anxsAPuA" target="_blank">Learn more</a>.</p>
-			<p>A complete list of all the features can be found in the <a href="https://docs.enhancementsuite.me" target="_blank">documentation</a>.</p>
-		</div>
-	</div>
-
-	<div class="row section">
-		<div class="col l6">
-			<h3>Release 1.3.5</h3>
-			
-			<p>This update is Windows only for the time being, Midas no longer has a Mac to properly maintain the Mac branche.</p>
-
-			<p><b>Windows:</b></p>
-			<ul>
-				<li>Emoji Support for menu items</li>
-					<ul><p>You can now add emojis to menu items and category names</p>
-					<p>LES will ask you if you want to apply a UTF-8 support registry patch to support those characters whenever you try to use one</p>
-					<p>the action is reversible</p>
-				</ul><li>Fixed Cleartracks</li><ul>
-					<p>feature should now work on linked tracks, live 11, live 10, and all regions</p>
-				</ul><li>Fixed Freeze & Flatten shortcuts</li><ul>
-					<p>feature should now work on all regions</p>
-				</ul><li>Changed default configuration file</li><ul>
-				<p>Piano roll detection for the scale menu is no longer enabled by default</p>
-				<p>Piano roll detection for the scale menu is no longer enabled by default</p>
-				</ul>
-			</ul>
-		</div>
-	</div>
-
-	<div class="row section">
-		<div class="col l6">
-			<h3>Release 1.3.3</h3>
-			
-			<p>This update is Windows only for the time being, Midas no longer has a Mac to properly maintain the Mac branche.</p>
-
-			<p><b>Windows:</b></p>
-			<ul>
-				<li>Added shortcuts for Freezing (Alt + F) and Flattening tracks (Alt + Shift + F)</li>
-				<li>Small fix for the Locator shortcut on Ableton Live 11 and older Live versions</li>
-				<li>Removed a tray flair thing that celebrates the 1.2 release since we're on 1.3 by now</li>
-				<li>Changed the installer default install directory of the installer</li>
-			</ul>
-		</div>
-	</div>
-
-	<div class="row section">
-		<div class="col l6">
-			<h3>Release 1.3.2</h3>
-			
-			<p>All the repositories for the open source code have been completely overhauled. It should be much easier for other people to contribute now.</p>
-
-			<p>This update is Windows only for the time being, Midas no longer has a Mac to properly maintain the Mac branche.</p>
-			<p>A Mac version of 1.3.2 will be released in due time</p>
-
-			<p><b>Windows:</b></p>
-			<ul>
-				<li>Depricated the vst shortcuts bound to the number keys, since they mostly seemed to just get in the way for people.</li>
-				<li>Added a button to install InsertWhere, a M4L companion plugin that changes where plugins are inserted. (Thank you <a href="https://twitter.com/Mat_Zo" target="_blank">Mat Zo</a>!)<ul>
-					<p>Hit the "Install InsertWhere" to extract the plugin.</p>
-					<p>To use InsertWhere, place the plugin on your master channel. It will now change the location where plugins are auto inserted.</p>
-					<p>If the location is set to "right", plugins will be autoinserted to the right of the one you have selected, rather than at the end.</p>
-					<p>Set insertwhere to "end" to mimmick default behavior.</p>
-					<p>Insertwhere's buttons can be keymapped, and the included oscillator can be used to hear which setting it is currently set to, without looking at the UI.</p>
-
-					<p>If you want to use InsertWhere on a Mac, please click <a href="https://cdn.discordapp.com/attachments/202817364264222720/805140617289138176/InsertWhere.amxd" target="_blank">here</a>.</p>
-				</ul></li>
-				<li>Attempted to fix a problem where the mouse would get stuck on middle click to pan. Let me know how that <i>pans</i> out.</li>
-				<li>Fixed a problem where alt+x cleartracks would not work right on the new Live 11 Beta (thank you bmason12149 on github!)</li>
-				<li>Implemented a function in settings.ini where you can switch the fucntions of shift + tab and tab around. (thank you bmason12149 on github!)</li>
-				<li>Fixed a problem where sometimes user input would get locked up when using Ctrl+Alt+S</li>
-				<li>Added some extra notes to menuconfig.ini</li>
-				<li>Added a warning that annoys people into not running LES from within a few protected system directories.</li>
-				<li>Improved some phrasing in dialog boxes</li>
-				<li>Made the "Save File As" dialog close automatically after deciding to not save an untitled project as a new file</li>
-			</ul>
-		</div>
-	</div>
-
-	<div class="row section">
-		<div class="col l6">
-			<h3>Version 1.3.1</h3>
-
-			<p>This is a broken Beta build that was never released.</p>
-		</div>
-	</div>
-
-	<div class="row section">
-		<div class="col l6">
-			<h3>Release 1.3</h3>
-
-			<p>LES is now open source; and all the source code has been documented using comments.</p>
-			<p><a href="https://github.com/Inversil/LESwin" target="_blank">https://github.com/Inversil/LESwin</a></p>
-			<p><a href="https://github.com/Inversil/LESosx" target="_blank">https://github.com/Inversil/LESosx</a></p>
-
-			<p><b>Windows:</b></p>
-			<ul>
-				<li>Fixed middle click to pan on logitech office mice, including all mice in the MX master series.</li>
-				<li>The search query is now always properly cleared, even when loading large vsts; without using the overly complicated bookmark feature.</li>
-				<li>Vastly increased responsiveness of the plugin menu.</li>
-				<li>The "strict time" setting is now stored across sessions</li>
-				<li>LES now warns you when users when it is executed from within the temp folder</li>
-				<li>Piano roll detection should now misdetect less</li>
-				<li>Added Buplicate!<ul>
-					<p>Use Ctrl + B to duplicate something 7 times! Press Ctrl + B again on the same element duplicate again 8 times!</p>
-					<p>Quickly duplicate an initial single clip in blocks of Eight</p>
-					<p>It's more useful than you'd think</p>
-				</ul></li>
-				<li>It's time for VST specific shortcuts!<ul>
-					<li>Xfer Serum: <ul>
-						<p>use the 1,2,3 and 4 key to switch tabs between osc, fx, matrix and global respectively</p>
-					</ul></li>
-					<li>Fabfilter Pro Q 3 (vst2, or vst3 without custom resizing):<ul>
-						<p>For some reason Ableton Live doesn't properly communicate undo's to pro Q.</p>
-						<p>This macro fixes undo and redo actions inside the plugin by remapping the undo and redo shortcuts to click the buttons at the top.</p>
-						<p>Since I'm not a magician, the undos and redos will behave jank as usual when the plugin window is unfocussed.</p>
-					</ul></li>
-					<li>Kick 2:<ul>
-						<p>The same thing as Pro-Q 3, except for Kick 2</p>
-					</ul></li>
-					<li>Sylenth1:<ul>
-						<p>use the 1 and 2 keys to switch between A and B tabs. (Although it's a toggle so you can also just hit 1 constantly)</p>
-					</ul></li>
-					<li>Sylenth1:<ul>
-						<p>use the 1 and 2 keys to switch between A and B tabs. (Although it's a toggle so you can also just hit 1 constantly)</p>
-					</ul></li>
-					<li>Massive:<ul>
-						<p>Use keys 1 through 5 to mute and unmute oscillators 1 through 5 (this includes PM/RM and noise)</p>
-					</ul></li>
-					<li>Phase Plant (BETA):<ul>
-						<p>These shortcuts are disabled and will not work unless a cheat is entered. 
-						There is a problem with them that I cannot figure out how to fix, but I left them in in case someone wants to play around with them.</p>
-						<p>If you want to access the Phaseplant shortcuts, enable debug mode in the settings. Then, spam press hit both shift keys at once while in ableton live to open the cheat menu.
-						Enter "kilohearts" to enable the shortcuts.</p>
-						<p>Use Alt + A to add an analog oscillator</p>
-						<p>Use Alt + N to add a noise oscillator</p>
-						<p>Use Alt + S to add a sample oscillator</p>
-						<p>Use Alt + W to add a wavetable oscillator</p>
-						<p>Use Alt + D to add a distortion oscillator</p>
-						<p>Use Alt + F to add a filter oscillator</p>
-						<p>Use Alt + O to add an output</p>
-						<p>Use Alt + L to add an LFO</p>
-					</ul></li>
-				</ul></li>
-				<li>VST specific shortcuts can be toggled on and off in the settings.</li>
-				<li>Ctrl + F1 or the PAUSE key can be used to toggle LES functionality on and off with ease.<ul>
-					<p>you can toggle LES off if a VST shortcut is conflicting with something else you want to do</p>
-				</ul></li>
-				<li>Added more safety checks to shortcuts so you can't trigger them out of context as much.</li>
-				<li>Added an option to increase scrolling speed, scroll around faster by changing the value in settings.ini</li>
-				<li>Removed "superspeedmode" from the settings. LES has been stable enough for a while to the point that it's no longer nescesary to have a toggle for this.</li>
-				<li>Removed the safe automation open shortcut. Changes to the 10.1 context menus cause it to malfunction too often.</li>
-				<li>Changed a japanese word in the black midi easter egg joke so it means "death" rather than telling the users to "die"</li>
-			</ul>
-			<p><b>MacOS:</b></p>
-			<ul>
-				<li>Fixed unintentional behavior where single character menu items would be cleared</li>
-				<li>Added more safety checks to shortcuts so you can't trigger them out of context as much.</li>
-				<li>Added a safeguard for if a different type of quote character is used in the menuconfig file</li>
-				<li>Removed the safe automation open shortcut. Changes to the 10.1 context menus cause it to malfunction too often.</li>
-				<li>Performance improvements to all shortcuts related to mouse movement</li>
-				<li>Updated the main build to Hammerspoon 0.9.76, allowing LES to be used on MacOS catalina.</li>
-				<li>Fixed a bug where hitting "strict time" would add a check the wrong menu item in the menubar menu.</li>
-				<li>The "strict time" setting is now stored across reloads.</li>
-				<li>The bookmark feature now works in windowed mode</li>
-				<li>fixed a bug where the console would show up with an error if you focus live before LES is done loading</li>
-				<li>fixed a bug where checking the project time would sometimes make the system unresponsive</li>
-				<li>Added Buplicate!<ul>
-					<p>Use Ctrl + B to duplicate something 7 times! Press Ctrl + B again on the same element duplicate again 8 times!</p>
-					<p>Quickly duplicate an initial single clip in blocks of Eight</p>
-					<p>It's more useful than you'd think</p>
-				</ul></li>
-				<li>It's time for VST specific shortcuts!<ul>
-					<li>Xfer Serum: <ul>
-						<p>use the 1,2,3 and 4 key to switch tabs between osc, fx, matrix and global respectively</p>
-					</ul></li>
-					<li>Fabfilter Pro Q 3 (vst2, or vst3 without custom resizing):<ul>
-						<p>For some reason Ableton Live doesn't properly communicate undo's to pro Q.</p>
-						<p>This macro fixes undo and redo actions inside the plugin by remapping the undo and redo shortcuts to click the buttons at the top.</p>
-						<p>Since I'm not a magician, the undos and redos will behave jank as usual when the plugin window is unfocussed.</p>
-					</ul></li>
-					<li>Kick 2:<ul>
-						<p>The same thing as Pro-Q 3, except for Kick 2</p>
-					</ul></li>
-					<li>Sylenth1:<ul>
-						<p>use the 1 and 2 keys to switch between A and B tabs. (Although it's a toggle so you can also just hit 1 constantly)</p>
-					</ul></li>
-					<li>Sylenth1:<ul>
-						<p>use the 1 and 2 keys to switch between A and B tabs. (Although it's a toggle so you can also just hit 1 constantly)</p>
-					</ul></li>
-					<li>Massive:<ul>
-						<p>Use keys 1 through 5 to mute and unmute oscillators 1 through 5 (this includes PM/RM and noise)</p>
-					</ul></li>
-				</ul></li>
-				<li>VST specific shortcuts can be toggled on and off in the settings.</li>
-				<li>Cmd + shift + 1 can be used to toggle LES functionality on and off with ease.<ul>
-					<p>you can toggle LES off if a VST shortcut is conflicting with something else you want to do</p>
-				</ul></li>
-			</ul>
-		</div>
-	</div>
-
-	<div class="row section">
-		<div class="col l6">
-			<h3>Release 1.2.2</h3>
-			<p><b>Windows:</b></p>
-			<ul>
-				<li>Improved 10.1 compatibility</li>
-				<li>Slightly better menu performance since 1.2.2</li>
-				<li>You can now close VST3 container windows with Ctrl + W (and Ctrl + Alt + W)</li>
-				<li>Clear track (Alt + X) now works on all languages</li>
-				<li>Save as new version (Ctrl + Alt + S) now works on all languages again</li>
-			</ul>
-			<p><b>MacOS:</b></p>
-			<ul>
-				<li>Improved 10.1 compatibility</li>
-				<li>Clear track (Option + X) now works on all languages</li>
-				<li>Save as new version (Cmd + Alt + S) now works on all languages</li>
-				<li>Improved absolute duplicate (Cmd + Alt + S and Cmd + Alt + D) performance and reliability</li>
-				<li>Both of these absolute duplicate commands now work on all langages</li>
-				<li>Place track marker (Alt + L) now works on all languages</li>
-				<li>Added a fallback shortcut for opening the plugin menu (Cmd + Shift + H)</li>
-		</div>
-	</div>
 
     <div class="row section">
-        <div class="col l6">
-            <h3>Release 1.2.1</h3>
-            <p><b>Windows:</b></p>
-            <ul>
-                <li>The plugin menu should now ALWAYS adds items properly, even if you're in a huge project and your computer is being unresponsive and slow.</li>
-                <li>The show automation lanes shortcut now also works even if you're using Live in different languages.</li>
-                <li>Added the ability to disable the Ctrl + W command.</li>
+      <div class="col l6">
+        <p>Live Enhancement Suite's official updates have been discontinued for the time being. <a
+            href="https://www.youtube.com/watch?v=eX0anxsAPuA" target="_blank">Learn more</a>.</p>
+        <p>A complete list of all the features can be found in the <a href="https://docs.enhancementsuite.me"
+            target="_blank">documentation</a>.</p>
+      </div>
+    </div>
+
+    <div class="row section">
+      <div class="col l6">
+        <h3>Release 1.3.5</h3>
+
+        <p>This update is Windows only for the time being, Midas no longer has a Mac to properly maintain the Mac
+          branche.</p>
+
+        <p><b>Windows:</b></p>
+        <ul>
+          <li>Emoji Support for menu items</li>
+          <ul>
+            <p>You can now add emojis to menu items and category names</p>
+            <p>LES will ask you if you want to apply a UTF-8 support registry patch to support those characters whenever
+              you try to use one</p>
+            <p>the action is reversible</p>
+          </ul>
+          <li>Fixed Cleartracks</li>
+          <ul>
+            <p>feature should now work on linked tracks, live 11, live 10, and all regions</p>
+          </ul>
+          <li>Fixed Freeze & Flatten shortcuts</li>
+          <ul>
+            <p>feature should now work on all regions</p>
+          </ul>
+          <li>Changed default configuration file</li>
+          <ul>
+            <p>Piano roll detection for the scale menu is no longer enabled by default</p>
+            <p>Piano roll detection for the scale menu is no longer enabled by default</p>
+          </ul>
+        </ul>
+      </div>
+    </div>
+
+    <div class="row section">
+      <div class="col l6">
+        <h3>Release 1.3.3</h3>
+
+        <p>This update is Windows only for the time being, Midas no longer has a Mac to properly maintain the Mac
+          branche.</p>
+
+        <p><b>Windows:</b></p>
+        <ul>
+          <li>Added shortcuts for Freezing (Alt + F) and Flattening tracks (Alt + Shift + F)</li>
+          <li>Small fix for the Locator shortcut on Ableton Live 11 and older Live versions</li>
+          <li>Removed a tray flair thing that celebrates the 1.2 release since we're on 1.3 by now</li>
+          <li>Changed the installer default install directory of the installer</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="row section">
+      <div class="col l6">
+        <h3>Release 1.3.2</h3>
+
+        <p>All the repositories for the open source code have been completely overhauled. It should be much easier for
+          other people to contribute now.</p>
+
+        <p>This update is Windows only for the time being, Midas no longer has a Mac to properly maintain the Mac
+          branche.</p>
+        <p>A Mac version of 1.3.2 will be released in due time</p>
+
+        <p><b>Windows:</b></p>
+        <ul>
+          <li>Depricated the vst shortcuts bound to the number keys, since they mostly seemed to just get in the way for
+            people.</li>
+          <li>Added a button to install InsertWhere, a M4L companion plugin that changes where plugins are inserted.
+            (Thank you <a href="https://twitter.com/Mat_Zo" target="_blank">Mat Zo</a>!)<ul>
+              <p>Hit the "Install InsertWhere" to extract the plugin.</p>
+              <p>To use InsertWhere, place the plugin on your master channel. It will now change the location where
+                plugins are auto inserted.</p>
+              <p>If the location is set to "right", plugins will be autoinserted to the right of the one you have
+                selected, rather than at the end.</p>
+              <p>Set insertwhere to "end" to mimmick default behavior.</p>
+              <p>Insertwhere's buttons can be keymapped, and the included oscillator can be used to hear which setting
+                it is currently set to, without looking at the UI.</p>
+
+              <p>If you want to use InsertWhere on a Mac, please click <a
+                  href="https://cdn.discordapp.com/attachments/202817364264222720/805140617289138176/InsertWhere.amxd"
+                  target="_blank">here</a>.</p>
             </ul>
-            <p><b>MacOS:</b></p>
-            <ul>
-                <li>Added the ability to disable the absolute duplicate commands.</li>
-                <li>Added the ability to disable the Ctrl + W command.</li>
-                <li>Made the piano roll macro error much more friendly looking (with added instructions!).</li>
-                <li>The show automation lanes shortcut now also works even if you're using Live in different languages.</li>
-        </div>
-    </div>	
-	
-	
+          </li>
+          <li>Attempted to fix a problem where the mouse would get stuck on middle click to pan. Let me know how that
+            <i>pans</i> out.
+          </li>
+          <li>Fixed a problem where alt+x cleartracks would not work right on the new Live 11 Beta (thank you
+            bmason12149 on github!)</li>
+          <li>Implemented a function in settings.ini where you can switch the fucntions of shift + tab and tab around.
+            (thank you bmason12149 on github!)</li>
+          <li>Fixed a problem where sometimes user input would get locked up when using Ctrl+Alt+S</li>
+          <li>Added some extra notes to menuconfig.ini</li>
+          <li>Added a warning that annoys people into not running LES from within a few protected system directories.
+          </li>
+          <li>Improved some phrasing in dialog boxes</li>
+          <li>Made the "Save File As" dialog close automatically after deciding to not save an untitled project as a new
+            file</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="row section">
+      <div class="col l6">
+        <h3>Version 1.3.1</h3>
+
+        <p>This is a broken Beta build that was never released.</p>
+      </div>
+    </div>
+
+    <div class="row section">
+      <div class="col l6">
+        <h3>Release 1.3</h3>
+
+        <p>LES is now open source; and all the source code has been documented using comments.</p>
+        <p><a href="https://github.com/Inversil/LESwin" target="_blank">https://github.com/Inversil/LESwin</a></p>
+        <p><a href="https://github.com/Inversil/LESosx" target="_blank">https://github.com/Inversil/LESosx</a></p>
+
+        <p><b>Windows:</b></p>
+        <ul>
+          <li>Fixed middle click to pan on logitech office mice, including all mice in the MX master series.</li>
+          <li>The search query is now always properly cleared, even when loading large vsts; without using the overly
+            complicated bookmark feature.</li>
+          <li>Vastly increased responsiveness of the plugin menu.</li>
+          <li>The "strict time" setting is now stored across sessions</li>
+          <li>LES now warns you when users when it is executed from within the temp folder</li>
+          <li>Piano roll detection should now misdetect less</li>
+          <li>Added Buplicate!<ul>
+              <p>Use Ctrl + B to duplicate something 7 times! Press Ctrl + B again on the same element duplicate again 8
+                times!</p>
+              <p>Quickly duplicate an initial single clip in blocks of Eight</p>
+              <p>It's more useful than you'd think</p>
+            </ul>
+          </li>
+          <li>It's time for VST specific shortcuts!<ul>
+              <li>Xfer Serum: <ul>
+                  <p>use the 1,2,3 and 4 key to switch tabs between osc, fx, matrix and global respectively</p>
+                </ul>
+              </li>
+              <li>Fabfilter Pro Q 3 (vst2, or vst3 without custom resizing):<ul>
+                  <p>For some reason Ableton Live doesn't properly communicate undo's to pro Q.</p>
+                  <p>This macro fixes undo and redo actions inside the plugin by remapping the undo and redo shortcuts
+                    to click the buttons at the top.</p>
+                  <p>Since I'm not a magician, the undos and redos will behave jank as usual when the plugin window is
+                    unfocussed.</p>
+                </ul>
+              </li>
+              <li>Kick 2:<ul>
+                  <p>The same thing as Pro-Q 3, except for Kick 2</p>
+                </ul>
+              </li>
+              <li>Sylenth1:<ul>
+                  <p>use the 1 and 2 keys to switch between A and B tabs. (Although it's a toggle so you can also just
+                    hit 1 constantly)</p>
+                </ul>
+              </li>
+              <li>Sylenth1:<ul>
+                  <p>use the 1 and 2 keys to switch between A and B tabs. (Although it's a toggle so you can also just
+                    hit 1 constantly)</p>
+                </ul>
+              </li>
+              <li>Massive:<ul>
+                  <p>Use keys 1 through 5 to mute and unmute oscillators 1 through 5 (this includes PM/RM and noise)</p>
+                </ul>
+              </li>
+              <li>Phase Plant (BETA):<ul>
+                  <p>These shortcuts are disabled and will not work unless a cheat is entered.
+                    There is a problem with them that I cannot figure out how to fix, but I left them in in case someone
+                    wants to play around with them.</p>
+                  <p>If you want to access the Phaseplant shortcuts, enable debug mode in the settings. Then, spam press
+                    hit both shift keys at once while in ableton live to open the cheat menu.
+                    Enter "kilohearts" to enable the shortcuts.</p>
+                  <p>Use Alt + A to add an analog oscillator</p>
+                  <p>Use Alt + N to add a noise oscillator</p>
+                  <p>Use Alt + S to add a sample oscillator</p>
+                  <p>Use Alt + W to add a wavetable oscillator</p>
+                  <p>Use Alt + D to add a distortion oscillator</p>
+                  <p>Use Alt + F to add a filter oscillator</p>
+                  <p>Use Alt + O to add an output</p>
+                  <p>Use Alt + L to add an LFO</p>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li>VST specific shortcuts can be toggled on and off in the settings.</li>
+          <li>Ctrl + F1 or the PAUSE key can be used to toggle LES functionality on and off with ease.<ul>
+              <p>you can toggle LES off if a VST shortcut is conflicting with something else you want to do</p>
+            </ul>
+          </li>
+          <li>Added more safety checks to shortcuts so you can't trigger them out of context as much.</li>
+          <li>Added an option to increase scrolling speed, scroll around faster by changing the value in settings.ini
+          </li>
+          <li>Removed "superspeedmode" from the settings. LES has been stable enough for a while to the point that it's
+            no longer nescesary to have a toggle for this.</li>
+          <li>Removed the safe automation open shortcut. Changes to the 10.1 context menus cause it to malfunction too
+            often.</li>
+          <li>Changed a japanese word in the black midi easter egg joke so it means "death" rather than telling the
+            users to "die"</li>
+        </ul>
+        <p><b>MacOS:</b></p>
+        <ul>
+          <li>Fixed unintentional behavior where single character menu items would be cleared</li>
+          <li>Added more safety checks to shortcuts so you can't trigger them out of context as much.</li>
+          <li>Added a safeguard for if a different type of quote character is used in the menuconfig file</li>
+          <li>Removed the safe automation open shortcut. Changes to the 10.1 context menus cause it to malfunction too
+            often.</li>
+          <li>Performance improvements to all shortcuts related to mouse movement</li>
+          <li>Updated the main build to Hammerspoon 0.9.76, allowing LES to be used on MacOS catalina.</li>
+          <li>Fixed a bug where hitting "strict time" would add a check the wrong menu item in the menubar menu.</li>
+          <li>The "strict time" setting is now stored across reloads.</li>
+          <li>The bookmark feature now works in windowed mode</li>
+          <li>fixed a bug where the console would show up with an error if you focus live before LES is done loading
+          </li>
+          <li>fixed a bug where checking the project time would sometimes make the system unresponsive</li>
+          <li>Added Buplicate!<ul>
+              <p>Use Ctrl + B to duplicate something 7 times! Press Ctrl + B again on the same element duplicate again 8
+                times!</p>
+              <p>Quickly duplicate an initial single clip in blocks of Eight</p>
+              <p>It's more useful than you'd think</p>
+            </ul>
+          </li>
+          <li>It's time for VST specific shortcuts!<ul>
+              <li>Xfer Serum: <ul>
+                  <p>use the 1,2,3 and 4 key to switch tabs between osc, fx, matrix and global respectively</p>
+                </ul>
+              </li>
+              <li>Fabfilter Pro Q 3 (vst2, or vst3 without custom resizing):<ul>
+                  <p>For some reason Ableton Live doesn't properly communicate undo's to pro Q.</p>
+                  <p>This macro fixes undo and redo actions inside the plugin by remapping the undo and redo shortcuts
+                    to click the buttons at the top.</p>
+                  <p>Since I'm not a magician, the undos and redos will behave jank as usual when the plugin window is
+                    unfocussed.</p>
+                </ul>
+              </li>
+              <li>Kick 2:<ul>
+                  <p>The same thing as Pro-Q 3, except for Kick 2</p>
+                </ul>
+              </li>
+              <li>Sylenth1:<ul>
+                  <p>use the 1 and 2 keys to switch between A and B tabs. (Although it's a toggle so you can also just
+                    hit 1 constantly)</p>
+                </ul>
+              </li>
+              <li>Sylenth1:<ul>
+                  <p>use the 1 and 2 keys to switch between A and B tabs. (Although it's a toggle so you can also just
+                    hit 1 constantly)</p>
+                </ul>
+              </li>
+              <li>Massive:<ul>
+                  <p>Use keys 1 through 5 to mute and unmute oscillators 1 through 5 (this includes PM/RM and noise)</p>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li>VST specific shortcuts can be toggled on and off in the settings.</li>
+          <li>Cmd + shift + 1 can be used to toggle LES functionality on and off with ease.<ul>
+              <p>you can toggle LES off if a VST shortcut is conflicting with something else you want to do</p>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="row section">
+      <div class="col l6">
+        <h3>Release 1.2.2</h3>
+        <p><b>Windows:</b></p>
+        <ul>
+          <li>Improved 10.1 compatibility</li>
+          <li>Slightly better menu performance since 1.2.2</li>
+          <li>You can now close VST3 container windows with Ctrl + W (and Ctrl + Alt + W)</li>
+          <li>Clear track (Alt + X) now works on all languages</li>
+          <li>Save as new version (Ctrl + Alt + S) now works on all languages again</li>
+        </ul>
+        <p><b>MacOS:</b></p>
+        <ul>
+          <li>Improved 10.1 compatibility</li>
+          <li>Clear track (Option + X) now works on all languages</li>
+          <li>Save as new version (Cmd + Alt + S) now works on all languages</li>
+          <li>Improved absolute duplicate (Cmd + Alt + S and Cmd + Alt + D) performance and reliability</li>
+          <li>Both of these absolute duplicate commands now work on all langages</li>
+          <li>Place track marker (Alt + L) now works on all languages</li>
+          <li>Added a fallback shortcut for opening the plugin menu (Cmd + Shift + H)</li>
+      </div>
+    </div>
+
+    <div class="row section">
+      <div class="col l6">
+        <h3>Release 1.2.1</h3>
+        <p><b>Windows:</b></p>
+        <ul>
+          <li>The plugin menu should now ALWAYS adds items properly, even if you're in a huge project and your computer
+            is being unresponsive and slow.</li>
+          <li>The show automation lanes shortcut now also works even if you're using Live in different languages.</li>
+          <li>Added the ability to disable the Ctrl + W command.</li>
+        </ul>
+        <p><b>MacOS:</b></p>
+        <ul>
+          <li>Added the ability to disable the absolute duplicate commands.</li>
+          <li>Added the ability to disable the Ctrl + W command.</li>
+          <li>Made the piano roll macro error much more friendly looking (with added instructions!).</li>
+          <li>The show automation lanes shortcut now also works even if you're using Live in different languages.</li>
+      </div>
+    </div>
+
+
 
     <div class="row section">
       <div class="col l6">
@@ -476,7 +543,8 @@
           <li>Changed default settings
             <ul>
               <li>
-                <code>resettobrowserbookmark</code> is now off by default</li>
+                <code>resettobrowserbookmark</code> is now off by default
+              </li>
               <li>
                 "Generators" are now called "Instruments" in the default menuconfig</li>
               <li>
@@ -552,8 +620,8 @@
         </ul>
       </div>
     </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
-    <script src="scripts/download.js"></script>
+    <script type="module" src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
+    <script type="module" src="scripts/download.js"></script>
 </body>
 
 </html>

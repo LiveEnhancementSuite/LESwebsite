@@ -4,22 +4,26 @@
   "description": "Website for Live Enhancement Suite",
   "main": "index.js",
   "scripts": {
-    "dev": "parcel <your entry file>",
+    "dev": "parcel *.html",
     "build": "parcel build *.html"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/sylrs/les-website.git"
+    "url": "git+https://github.com/LiveEnhancementSuite/LESwebsite.git"
   },
-  "author": "@sylrs @vagene @inversil",
+  "author": "@sylrs @luciascarlet @inversil",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/sylrs/les-website/issues"
+    "url": "https://github.com/LiveEnhancementSuite/LESwebsite/issues"
   },
-  "homepage": "https://github.com/sylrs/les-website#readme",
+  "homepage": "https://github.com/LiveEnhancementSuite/LESwebsite#readme",
+  "dependencies": {
+    "parcel": "^2.9.1"
+  },
   "devDependencies": {
-    "node-sass": "^4.12.0",
-    "parcel-bundler": "^1.12.3",
-    "parcel-plugin-static-files-copy": "^2.1.2"
+    "@parcel/config-default": "^2.9.1",
+    "@parcel/transformer-raw": "^2.9.1",
+    "@parcel/transformer-sass": "^2.9.1",
+    "sass": "^1.62.1"
   }
 }
